@@ -38,6 +38,8 @@ function Tabs() {
 
   return (
     <>
+    <div className="mainbox">
+    <h1>Choose a Program</h1>
       <div className="box">
         <div className="navlinks">
           {List.map((item, index) => (
@@ -64,6 +66,7 @@ function Tabs() {
           </section>
         ))}
       </div>
+    </div>
     </>
   );
 }

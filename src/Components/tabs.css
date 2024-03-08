@@ -1,3 +1,4 @@
+/* Default styles */
 .navlinks {
   display: flex;
   justify-content: space-evenly;
@@ -5,7 +6,9 @@
   border-bottom: 1px solid #095797;
   padding: 2.5%;
 }
-
+.mainbox{
+  text-align: center;
+}
 .box {
   background-color: #0957970a;
   margin: 7.5%;
@@ -19,17 +22,17 @@
   color: black;
   font-size: 18px;
 }
-.navlinks > a:active{
+.navlinks > a:active {
   color: #095797;
 }
 
 ul {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   list-style: none;
   flex-direction: row;
 }
-ul li{
+ul li {
   text-align: center;
   display: flex;
   align-items: center;
@@ -39,7 +42,7 @@ ul li{
   background-color: #09579780;
   margin: 10px;
 }
-li img{
+li img {
   width: 75px;
 }
 section {
@@ -52,4 +55,23 @@ section.active {
 
 .box1 {
   background-color: #09579780;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
 }
